@@ -58,7 +58,7 @@ def save(text, t_rns):
     )
     connection.commit()
 
-TOKEN = '7463442790:AAHl3VG6fUzfXd3ZohY90VFI5cLt1Hp3xI0'
+TOKEN = 'hahahha'
 bot = TeleBot(TOKEN)
 
 
@@ -71,7 +71,7 @@ def translate_text(message):
     text = message.text
     t_rns = f'{translate(text)}'
     bot.send_message(message.chat.id, t_rns)
-
+    save(text, t_rns)
 
 
 print("server start")
